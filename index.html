@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Bungee+Shade&family=Croissant+One&family=Fauna+One&family=Forum&family=Lemon&family=Rye&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <section class="logo-banner"><img src="musikfestival.png" /></section>
+      <section class="filter">
+        <select id="day-filter"></select>
+
+        <select id="genre-filter"></select>
+
+        <select id="stage-filter"></select>
+
+        <!-- Filter Button -->
+        <button id="filter-button">Filter</button>
+      </section>
+
+      <section id="chosen-filters" class="hidden">
+        <div class="chosen-filters-wrap">
+          <div id="chosen-day">Day: All</div>
+          <div id="chosen-genre">Genre: All</div>
+          <div id="chosen-stage">Stage: All</div>
+          <button id="clear-button">✖ Clear Filters</button>
+        </div>
+        <p id="error-message"></p>
+      </section>
+
+      <!-- Posts Container -->
+      <section id="concerts-container"></section>
+    </main>
+  </body>
+</html>
+
+<script src="festival.js"></script>
