@@ -249,8 +249,9 @@ const fetchFestivalData = async () => {
         return matchDay && matchGenre && matchStage;
       });
 
+      // Function för att visa "no posts found" meddelande
+
       if (filteredPosts.length === 0) {
-        // Function to show "no posts found" message
         errorContainer.innerHTML =
           "<strong>Oops!</strong> No Concerts found. Try using a different filter.";
       } else {
