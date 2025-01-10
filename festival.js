@@ -301,7 +301,8 @@ const fetchFestivalData = async () => {
       }
     });
 
-    // Event listener och funktion för att visa stage info
+    //Kör funktioner för att skapa posts och uppdatera filter
+
     renderPosts(sortedAllPosts);
     updateChosenFilters("All", "All", "All");
   } catch (error) {
